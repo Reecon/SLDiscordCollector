@@ -1,0 +1,41 @@
+﻿{
+    "Command": {
+        "group": "Core", 
+        "label": "Command", 
+        "tooltip": "Twitch chat command that is used to post to discord", 
+        "type": "textbox", 
+        "value": "!suggest"
+    }, 
+    "Cooldown": {
+        "group": "Core", 
+        "label": "Default Cooldown (seconds)", 
+        "max": 100, 
+        "min": 0, 
+        "ticks": 1, 
+        "tooltip": "Default value for how long the command should go on cooldown for", 
+        "type": "slider", 
+        "value": 0.0
+    }, 
+    "Info": {
+        "group": "Core", 
+        "label": "Default Users", 
+        "tooltip": "This field should only be filled when using the user_specific permission.", 
+        "type": "textbox", 
+        "value": ""
+    }, 
+    "Permission": {
+        "group": "Core", 
+        "items": [
+            "everyone", 
+            "moderator", 
+            "subscriber", 
+            "user_specific", 
+            "editor"
+        ], 
+        "label": "Default Permission", 
+        "tooltip": "Default value for who is able to use the command", 
+        "type": "dropdown", 
+        "value": "everyone"
+    }, 
+    "output_file": "Settings/settings.json"
+}
